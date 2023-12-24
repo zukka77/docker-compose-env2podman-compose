@@ -1,4 +1,4 @@
-This simple utility converts bare environment variables from `var` to `var=${var}`. 
+This simple utility converts bare environment variables from `var` to `var=${var}` in "compose" files. 
 
 docker-compose when finds a bare var just passes the current env value, this is not the case for podman-compose.
 

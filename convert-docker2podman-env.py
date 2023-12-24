@@ -14,7 +14,7 @@ def translate(path: str) -> dict:
 
 
 if __name__ == "__main__":
-    assert len(sys.argv) > 1, "missing file"
+    assert len(sys.argv) > 1, "missing input file"
     new_compose = translate(sys.argv[1])
     new_data = yaml.safe_dump(new_compose)
     sys.stdout.write(new_data)
